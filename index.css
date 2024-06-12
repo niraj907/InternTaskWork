@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.hotel-details {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hotel-details__title {
+    margin-top: 0;
+}
+
+.rating {
+    font-size: 24px;
+}
+
+.rating__star {
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating__star--active,
+.rating__star:hover {
+    color: #ffd700;
+}
+
+.rating-system {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.rating-system__interface {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feedback-form {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.feedback-form__title {
+    margin-top: 0;
+}
+
+.feedback-form__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form__submit {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.feedback-form__submit:hover {
+    background-color: #3e8e41;
+}

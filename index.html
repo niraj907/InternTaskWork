@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloft Hotels Review </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Aloft Hotels Review Landing Page</h1>
+    </header>
+    <main>
+        <section class="hotel-details">
+            <h2 class="hotel-details__title">Aloft Hotels</h2>
+            <p class="hotel-details__description">In an area with multiple restaurants and cafes, this polished hotel is a 5-minute walk from the leafy grounds of the Garden of Dreams, 2 km from Kathmandu Durbar Square and 6 km from Tribhuvan International Airport.</p>
+            <ul class="hotel-details__contact">
+                <li>Phone: <a href="tel:+1234567890">+1234567890</a></li>
+                <li>Email: <a href="mailto:aloft.hotels@example.com">aloft.hotels@example.com</a></li>
+                <li>Address: Aloft Kathmandu Thamel, Chhaya Devi Complex</li>
+            </ul>
+            <div class="rating">
+                <h4 class="rating__star__title">How was your stay?</h4>
+                <span class="rating__star" data-rating="1">&#9734;</span>
+                <span class="rating__star" data-rating="2">&#9734;</span>
+                <span class="rating__star" data-rating="3">&#9734;</span>
+                <span class="rating__star" data-rating="4">&#9734;</span>
+                <span class="rating__star" data-rating="5">&#9734;</span>
+            </div>
+        </section>
+        <section class="rating-system">
+            <h2 class="rating-system__title">Rate Your Stay</h2>
+            <div class="rating-system__interface">
+                <span class="rating__star" data-rating="1">&#9734;</span>
+                <span class="rating__star" data-rating="2">&#9734;</span>
+                <span class="rating__star" data-rating="3">&#9734;</span>
+                <span class="rating__star" data-rating="4">&#9734;</span>
+                <span class="rating__star" data-rating="5">&#9734;</span>
+            </div>
+            <div class="feedback-form">
+                <h2 class="feedback-form__title">Share Your Feedback</h2>
+                <form class="feedback-form__form">
+                    <label class="feedback-form__label" for="rating">Rating:</label>
+                    <input class="feedback-form__input" type="number" id="rating" readonly>
+                    <label class="feedback-form__label" for="name">Name:</label>
+                    <input class="feedback-form__input" type="text" id="name" required>
+                    <label class="feedback-form__label" for="email">Email:</label>
+                    <input class="feedback-form__input" type="email" id="email" required>
+                    <label class="feedback-form__label" for="comments">Comments:</label>
+                    <textarea class="feedback-form__textarea" id="comments" required></textarea>
+                    <button class="feedback-form__submit" type="submit" id="btn">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+<script src="index.js"></script>
+</body>
+</html>
