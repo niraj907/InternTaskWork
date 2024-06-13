@@ -1,6 +1,6 @@
 // Function to handle star rating click
 function handleStarClick(stars, feedbackForm) {
-    stars.forEach((star, index) => {
+    stars.forEach((star) => {
         star.addEventListener('click', () => {
             const rating = star.getAttribute('data-rating');
             stars.forEach((s, i) => {

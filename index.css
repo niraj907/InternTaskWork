@@ -1,57 +1,60 @@
+/* Root Variable */
+:root {
+    --primary: #ffd700;
+    --primary-shade-1: #4CAF50;
+    --primary-shade-2: #3e8e41;
+    --secondary: #fff;
+    --secondary-shade-1: #f7f7f7;
+    --secondary-shade-2: #ddd;
+    --secondary-shade-3: #ccc;
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-.hotel-details {
-    background-color: #f7f7f7;
+/* hotel details */
+.hotel-details, .rating-system {
+    background-color: var(--secondary-shade-1);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-shade-2);
     border-radius: 10px;
     margin-bottom: 20px;
-}
+  }
 
-.hotel-details__title {
+.hotel-details__title , .feedback-form__title{
     margin-top: 0;
 }
 
+/* rating */
 .rating {
     font-size: 24px;
 }
 
 .rating__star {
     cursor: pointer;
-    color: #ccc;
+    color: var(--secondary-shade-3);
 }
 
 .rating__star--active,
 .rating__star:hover {
-    color: #ffd700;
+    color: var(--primary)
 }
 
-.rating-system {
-    background-color: #f7f7f7;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
 .rating-system__interface {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+/* feedback form */
 .feedback-form {
     display: none;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-shade-2);
     border-radius: 10px;
     margin-bottom: 20px;
-}
-
-.feedback-form__title {
-    margin-top: 0;
 }
 
 .feedback-form__label {
@@ -61,15 +64,16 @@ body {
 
 .feedback-form__input,
 .feedback-form__textarea {
-    width: 95%;
+    min-width: 98%;
     padding: 12px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--secondary-shade-3)
 }
 
+/* feedback form submit button */
 .feedback-form__submit {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: var(--primary-shade-1);
+    color: var(--secondary);
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -77,5 +81,22 @@ body {
 }
 
 .feedback-form__submit:hover {
-    background-color: #3e8e41;
+    background-color: var(--primary-shade-2);
 }
+
+/* Responsive media query*/
+@media (max-width: 768px) {
+    .feedback-form__input,
+    .feedback-form__textarea {
+        min-width: 95%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .feedback-form__input,
+    .feedback-form__textarea {
+        min-width: 91%;
+    }
+}
+
