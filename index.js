@@ -4,7 +4,11 @@ function handleStarClick(stars, feedbackForm) {
         star.addEventListener('click', () => {
             const rating = star.getAttribute('data-rating');
             stars.forEach((s, i) => {
-                i < rating ? s.classList.add('rating__star--active') : s.classList.remove('rating__star--active');
+                if (i < rating) {
+                    s.classList.add('rating__star--active');
+                } else {
+                    s.classList.remove('rating__star--active');
+                }
             });
 
             if (feedbackForm) {
@@ -16,6 +20,13 @@ function handleStarClick(stars, feedbackForm) {
                 }
             }
         });
+    });
+}
+
+// Function to reset star ratings
+function resetStarRatings(stars) {
+    stars.forEach((star) => {
+        star.classList.remove('rating__star--active');
     });
 }
 
@@ -42,6 +53,9 @@ feedbackFormElement.addEventListener('submit', (e) => {
     
     // Clear the form data
     feedbackFormElement.reset();
+    
+    // Reset star ratings
+    resetStarRatings(ratingInterfaceStars);
     
     // Optionally hide the form again after submission
     feedbackForm.style.display = 'none';
