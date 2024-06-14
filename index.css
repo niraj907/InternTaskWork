@@ -98,5 +98,9 @@ body {
     .feedback-form__textarea {
         min-width: 91%;
     }
+
+    .swal2-popup{
+        width: 90%;
+    }
 }
 
