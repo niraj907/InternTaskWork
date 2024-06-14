@@ -48,7 +48,14 @@ feedbackFormElement.addEventListener('submit', (e) => {
     const email = document.querySelector('#email').value;
     const comments = document.querySelector('#comments').value;
     
-    alert('Feedback form successfully submitted!!!');
+    //  pop-up feedback message using SweetAlert2 
+    Swal.fire({
+        title: "Good job!",
+        text: "Feedback form successfully submitted!!!",
+        icon: "success",
+        button: "OK"
+    });
+
     console.log(`Feedback submitted: ${rating}, ${name}, ${email}, ${comments}`);
     
     // Clear the form data
